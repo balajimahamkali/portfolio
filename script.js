@@ -46,6 +46,15 @@ window.onclick = function(event) {
   }
 }
 
-function alertMsg(){ 
-    alert('Message Sent Successfully');
+function sendEmail(){
+  Email.send({
+    SecureToken: "b005cf8b-839f-40c6-a3de-18ca101b48f5",
+  
+    To : '19kb1a0483@nbkrist.org',
+    From : document.getElementById("email-con").value,
+    Subject : "New message from Portfolio",
+    Body : "Name: " + document.getElementById("name-con").value + "<br> Email: " + document.getElementById("email-con").value + "<br> Ph No.: " + document.getElementById("phone-con").value + "<br> Message" + document.getElementById("message").value 
+  }).then(
+    message => alert("Message Sent Successfully!")
+  );
 }
