@@ -53,7 +53,7 @@ function sendEmail(){
     To : '19kb1a0483@nbkrist.org',
     From : document.getElementById("email-con").value,
     Subject : "New message from Portfolio",
-    Body : "Name: " + document.getElementById("name-con").value + "<br> Email: " + document.getElementById("email-con").value + "<br> Ph No.: " + document.getElementById("phone-con").value + "<br> Message" + document.getElementById("message").value 
+    Body : "Name: " + document.getElementById("name-con").value + "<br> Email: " + document.getElementById("email-con").value + "<br> Ph No.: " + document.getElementById("phone-con").value + "<br> Message: " + document.getElementById("message").value 
   }).then(
     message => alert("Message Sent Successfully!")
   );
