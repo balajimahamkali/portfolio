@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <title>Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="Images/BMLogo2.png">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="Images/BMLogo2.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
     </head>
@@ -191,10 +191,10 @@
                         </div>
                     </div>
                     <div id="contact-rights">
-                        <form action="#" onsubmit="alertMsg()">
-                            <input type="text" placeholder="   Name" required>
-                            <input type="tel" placeholder="   Phone Number"  required>
-                            <input type="email" placeholder="   Email" required>
+                        <form onsubmit="sendEmail(); reset(); return false;">
+                            <input id="name-con" type="text" placeholder="   Name" required>
+                            <input id="phone-con" type="tel" placeholder="   Phone Number"  required>
+                            <input  id="email-con" type="email" placeholder="   Email" required>
                             <textarea id="message" placeholder="  Message" cols="35" rows="5"></textarea>
                             <div id="submit-btn">
                             <button type="submit" id="submit-button">Submit</button>
@@ -205,6 +205,7 @@
             </div>
           
           </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
