@@ -191,7 +191,7 @@
                         </div>
                     </div>
                     <div id="contact-rights">
-                        <form onsubmit="sendEmail();">
+                        <form onsubmit="sendEmail(); reset(); return false;">
                             <input id="name-con" type="text" placeholder="   Name" required>
                             <input id="phone-con" type="tel" placeholder="   Phone Number"  required>
                             <input  id="email-con" type="email" placeholder="   Email" required>
