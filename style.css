@@ -504,6 +504,24 @@ form button{
 #contact-rights input, textarea{
     border-radius: 10px;
 }
+
+#iconbutton{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+#iconbutton img{
+    max-width: 50px;
+    clip-path: circle(50%);
+}
+
 @media screen and (max-width: 480px) {
     #home-photo img {
         max-width: 100%; /* Adjust image size */
